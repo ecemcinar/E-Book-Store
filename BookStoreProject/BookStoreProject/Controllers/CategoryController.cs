@@ -15,8 +15,9 @@ namespace BookStoreProject.Controllers
         [Obsolete]
         SqlConnection con = HomeController.con;
 
-
         BookController bookController = new BookController();
+
+        [Obsolete]
         public List<String> FetchDataInView(String command,String table_name)
         {
             try
@@ -42,9 +43,9 @@ namespace BookStoreProject.Controllers
         [Route("category")]
         [Route("category/{searchText?}")]
         [HttpGet]
+        [Obsolete]
         public ActionResult Category(string searchText)
         {
-
             String comd = "";
             List<Book> allbooks = new List<Book>();
             if (searchText !=null&& searchText.Length > 0)
@@ -75,7 +76,7 @@ namespace BookStoreProject.Controllers
             ViewBag.FavoriteBooks = books;
                 
             comd = "SELECT * FROM[bookexchange].[dbo].[Category]";
-            List<String> categories = FetchDataInView(comd, "Book_Category");
+            List<String>  categories = FetchDataInView(comd, "Book_Category");
             ViewBag.Categories = categories;
             comd = "SELECT * FROM[bookexchange].[dbo].[Year]";
             List<String> years = FetchDataInView(comd, "Book_Year");
@@ -88,6 +89,7 @@ namespace BookStoreProject.Controllers
             return View();
         }
         [HttpPost]
+        [Obsolete]
         public ActionResult Category(Book book)
         {
             String comd = "SELECT * FROM [dbo].[Book]";
