@@ -7,8 +7,13 @@ called readers, can do. Administrators have a high activity in the system whilst
 are limited in what they can do.
 
 Actions That Readers Can Take:point_down:<br>
-:green_book:Search Book<br>
-:green_book:Buy Book<br>
-:green_book:Read Book<br>
-:green_book:Mark book as "Want to Read", "Already Read", "Now Reading"<br>
+:green_book:Search Books<br>
+:green_book:Buy Books<br>
+:green_book:Read Books<br>
+:green_book:Mark books as "Want to Read", "Already Read", "Now Reading"<br>
 :green_book:Make Changes on Own Profile<br>
+
+What can admins do:question:<br>
+:mag_right:Read/Delete Users<br>
+:mag_right:Create/Read/Update/Delete a Book<br>
+:mag_right:All Actions which Users Can Do<br>
